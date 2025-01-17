@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
+import { IoLogoFigma, IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
 
 export function Footer() {
     return (
@@ -14,6 +14,9 @@ export function Footer() {
                 </Link>
                 <Link href={"https://x.com/g_mercante"}>
                     <IoLogoTwitter size={32} />
+                </Link>
+                <Link href={"https://www.figma.com/design/xrOk5U2aGOZugFdiSzVUe5/Portfolio-v1?node-id=0-1&t=eUd2mhJe6w3ivnr8-1"}>
+                    <IoLogoFigma size={32} />
                 </Link>
             </div>
         </footer>
