@@ -11,17 +11,11 @@ const experiences = [
         startDate: '11-2022',
         endDate: '12-2024',
         description: `
-            • Development and maintenance of integrations with external partners using 
-            RESTful APIs and sFTP protocols, ensuring efficiency and reliability in data 
-            exchange.\n
-            • Creation and maintenance of orchestration flows to coordinate multiple services 
-            and systems, ensuring aligned and well-structured processes.\n 
-            • Migration of legacy services and integrations to new solutions, ensuring system 
-            continuity and modernization.\n
-            • Writing unit tests to validate the functionality and consistency of integrations with 
-            partner systems.\n
-            • Ensuring the quality of integrations and flows, focusing on scalability and 
-            alignment with partner and business needs.
+            • Development and maintenance of integrations with external partners using RESTful APIs and sFTP protocols, ensuring efficiency and reliability in data exchange.\n
+            • Creation and maintenance of orchestration flows to coordinate multiple services and systems, ensuring aligned and well-structured processes.\n 
+            • Migration of legacy services and integrations to new solutions, ensuring system continuity and modernization.\n
+            • Writing unit tests to validate the functionality and consistency of integrations with partner systems.\n
+            • Ensuring the quality of integrations and flows, focusing on scalability and alignment with partner and business needs.
         `,
         stack: ['Nest.js', 'Kogito', 'MongoDB', 'RabbitMQ', 'Docker']
     },
@@ -31,17 +25,11 @@ const experiences = [
         startDate: '01-2019',
         endDate: '11-2022',
         description: `
-            • Development and maintenance of PHP scripts for reading and processing files 
-            in various formats, ensuring efficient integration with internal and external 
-            systems.\n
-            • Creation and maintenance of responsive and optimized landing pages for 
-            marketing campaigns and lead generation.\n 
-            • Migration of legacy PHP services to an event-driven architecture using Node.js, 
-            improving scalability and performance. \n
-            • Implementation of custom logic for generating detailed reports, meeting both 
-            client and internal business needs.\n
-            • Collaboration with multidisciplinary teams to optimize workflows, implement 
-            best development practices, and continuously improve code structure.
+            • Development and maintenance of PHP scripts for reading and processing files in various formats, ensuring efficient integration with internal and external systems.\n
+            • Creation and maintenance of responsive and optimized landing pages for marketing campaigns and lead generation.\n 
+            • Migration of legacy PHP services to an event-driven architecture using Node.js, improving scalability and performance. \n
+            • Implementation of custom logic for generating detailed reports, meeting both client and internal business needs.\n
+            • Collaboration with multidisciplinary teams to optimize workflows, implement best development practices, and continuously improve code structure.
         `,
         stack: ['Node.js', 'PHP', 'RabbitMQ', 'MongoDB', 'MySQL', 'Redis', 'Angular.js', 'HTML', 'CSS', 'AWS']
     }
@@ -94,7 +82,7 @@ export default function Career() {
                                         <div>
                                             {
                                                 description.split('\n').map((line, index) => (
-                                                    <p key={line + index} className="text-sm">{line}</p>
+                                                    <p key={line + index} className="text-sm text-justify">{line}</p>
                                                 ))
                                             }
                                         </div>

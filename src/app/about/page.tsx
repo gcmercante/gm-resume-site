@@ -8,7 +8,7 @@ export default function About() {
           <h2 className="text-title font-bold text-lg">
             A brief history about me
           </h2>
-          <p className="text-text text-base">
+          <p className="text-text text-base text-justify">
             Hi! I&apos;m Gabriel Mercante, a highly motivated Backend Engineer with over 5 years of experience building efficient, scalable, and reliable systems. My expertise lies in Node.js development, technical debt reduction, and applying best practices in design patterns to deliver high-quality, maintainable code.
             I&apos;m passionate about tackling complex challenges, ensuring data integrity in large-scale applications, and contributing to projects that make a meaningful impact. With strong communication skills in English (C1), I thrive in collaborative environments and value teamwork as a driving force for innovation.
           </p>
