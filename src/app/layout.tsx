@@ -23,10 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} antialiased`}
+        className={`${poppins.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header />
-        {children}
+        <main className="flex-1 flex justify-center items-center pt-24 pb-12 px-6 md:pt-32 md:px-12 xl:px-24">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

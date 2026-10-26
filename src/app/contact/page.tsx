@@ -3,9 +3,9 @@ import { IoLogoLinkedin, IoLogoWhatsapp, IoMail } from "react-icons/io5";
 
 export default function Contact() {
     return (
-        <div className="px-48 py-[26rem] flex flex-col justify-center items-center gap-20">
-            <h1 className="text-title text-hero font-bold leading-none">Get In Touch</h1>
-            <div className="text-yellow flex justify-between gap-36">
+        <div className="flex flex-col justify-center items-center gap-12 md:gap-20">
+            <h1 className="text-title text-[2.75rem] md:text-hero font-bold leading-none text-center">Get In Touch</h1>
+            <div className="text-yellow flex justify-between gap-12 md:gap-36">
                 <Link href="mailto:gmercante23@gmail.com">
                     <IoMail size={64} />
                 </Link>

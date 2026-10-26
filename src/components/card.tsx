@@ -10,8 +10,8 @@ interface CardProps {
 
 export function Card({ repo }: CardProps) {
     return (
-        <div className="bg-card text-text max-w-[25rem] min-w-[25rem] rounded-md">
-            <Image src={githubLogo} alt="Github logo" className="rounded-t-md" />
+        <div className="bg-card text-text w-full max-w-[25rem] sm:min-w-[25rem] rounded-md">
+            <Image src={githubLogo} alt="Github logo" className="rounded-t-md w-full h-auto" />
             <div className="flex flex-col gap-4 p-4">
                 <h2 className="text-title text-base">{repo.name}</h2>
                 <p className="text-subtext text-xs">{repo.description}</p>

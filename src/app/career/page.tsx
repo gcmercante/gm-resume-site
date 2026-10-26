@@ -67,18 +67,18 @@ export default function Career() {
     }
 
     return (
-        <div className="flex justify-center items-center m-64">
-            <div className="flex flex-col p-4 gap-8 text-text max-w-[960px]">
-                <h1 className="text-title text-xl font-bold">My Experiences</h1>
-                <div className="flex flex-row gap-8">
+        <div className="flex justify-center items-center w-full">
+            <div className="flex flex-col md:p-4 gap-8 text-text max-w-[960px] w-full">
+                <h1 className="text-title text-xl font-bold leading-tight">My Experiences</h1>
+                <div className="flex flex-col md:flex-row gap-8">
                     <div>
-                        <div className="border-l-[1px] border-l-yellow">
+                        <div className="flex flex-row overflow-x-auto md:flex-col border-b-[1px] border-b-yellow md:border-b-0 md:border-l-[1px] md:border-l-yellow">
                             {
                                 sortedExperiences.map(({ company }) => (
                                     <div 
                                         key={company} 
                                         onClick={() => handleExperienceClick(company)} 
-                                        className={`p-4 cursor-pointer border-l-2 border-transparent hover:border-l-yellow ${selectedCompany === company ? 'border-l-yellow' : ''}`}>
+                                        className={`p-4 cursor-pointer border-b-2 md:border-b-0 md:border-l-2 border-transparent hover:border-yellow ${selectedCompany === company ? 'border-yellow' : ''}`}>
                                         <h2 className="text-base">{company}</h2>
                                     </div>
                                 ))
@@ -88,14 +88,14 @@ export default function Career() {
                     <div>
                         {
                             sortedExperiences.map(({ title, company, startDate, endDate, description, stack }, index) => (
-                                <div key={company + index} className={`flex gap-8 ${selectedCompany !== company ? 'hidden' : ''}`}>
+                                <div key={company + index} className={`flex flex-col md:flex-row gap-8 ${selectedCompany !== company ? 'hidden' : ''}`}>
                                     <div>
                                         <h2 className="text-base font-bold">{title} @ {company}</h2>
                                         <p className="text-sm mb-5">{verboseDate(startDate)} - {verboseDate(endDate)}</p>
                                         <div>
                                             {
                                                 description.split('\n').map((line, index) => (
-                                                    <p key={line + index} className="text-sm text-justify">{line}</p>
+                                                    <p key={line + index} className="text-sm md:text-justify">{line}</p>
                                                 ))
                                             }
                                         </div>
@@ -105,7 +105,7 @@ export default function Career() {
                                         <div className="flex flex-col gap-1">
                                             {
                                                 stack.map((tech, index) => (
-                                                    <p key={tech + index} className="flex flex-row gap-2 items-center text-sm">
+                                                    <p key={tech + index} className="flex flex-row gap-2 items-center text-sm whitespace-nowrap">
                                                         <IoCheckmarkCircleOutline />
                                                         {tech}
                                                     </p>
