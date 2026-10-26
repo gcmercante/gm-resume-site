@@ -3,9 +3,9 @@ import { IoLogoFigma, IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from "react
 
 export function Footer() {
     return (
-        <footer className='bottom-0 left-0 w-full flex flex-row justify-between items-center px-48 pb-8 bg-bg'>
+        <footer className='w-full flex flex-col-reverse gap-4 md:flex-row justify-between items-center px-6 pb-6 md:px-12 md:pb-8 xl:px-48 bg-bg'>
             <p className='text-text text-xs'>Designed & built by Gabriel Mercante</p>
-            <div className="text-yellow flex gap-20">
+            <div className="text-yellow flex gap-10 md:gap-20">
                 <Link href={"https://github.com/gcmercante"}>
                     <IoLogoGithub size={32} />
                 </Link>

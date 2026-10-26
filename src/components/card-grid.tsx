@@ -6,7 +6,7 @@ export async function CardGrid() {
 
     return (
         <div className="flex">
-            <div className="grid grid-cols-3 gap-8 w-full items-center justify-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-8 w-full items-center justify-center">
                 {
                     result.map((repo) => (
                         <Card key={repo.id} repo={repo} />
