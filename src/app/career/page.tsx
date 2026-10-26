@@ -7,6 +7,19 @@ import { IoCheckmarkCircleOutline } from "react-icons/io5";
 const experiences = [
     {
         title: 'Software Engineer',
+        company: 'Galp',
+        startDate: '01-2025',
+        endDate: '09-2026',
+        description: `
+            • Developed a core email and SMS delivery platform using Node.js with TypeScript and Kafka, centralizing all company email and SMS traffic, reducing operational expenses by replacing unnecessary third-party tools with internal solutions.\n
+            • Developed and contributed to the deployment of multiple APIs supporting a wide range of business functionalities, including a QR code generation API that reduced the need for lengthy paper invoices while enabling customers to access their invoices digitally.\n
+            • Contributed to the modernization and replacement of a legacy product management platform developed by external teams, delivering a faster and more reliable in-house solution that reduced bugs, improved performance, and simplified ongoing maintenance and evolution.\n
+            • Led the development of an internal back-office platform for email and SMS services, significantly improving observability and reducing response times for service-related issues and support tickets. Defined the architecture and key technical decisions while mentoring an intern developer, supporting both successful delivery and technical growth.
+        `,
+        stack: ['Nest.js (TypeScript)', 'MongoDB', 'Kafka', 'AWS', 'Next.js', 'MySQL', 'Redis', 'Jest', 'Eslint', 'Agile']
+    },
+    {
+        title: 'Software Engineer',
         company: 'bolttech',
         startDate: '11-2022',
         endDate: '12-2024',
@@ -17,7 +30,7 @@ const experiences = [
             • Writing unit tests to validate the functionality and consistency of integrations with partner systems.\n
             • Ensuring the quality of integrations and flows, focusing on scalability and alignment with partner and business needs.
         `,
-        stack: ['Nest.js', 'Kogito', 'MongoDB', 'RabbitMQ', 'Docker']
+        stack: ['Nest.js (TypeScript)', 'Java (Kogito)', 'MongoDB', 'RabbitMQ', 'Docker', 'Jest', 'Eslint', 'Agile']
     },
     {
         title: 'Backend Engineer',
@@ -31,7 +44,7 @@ const experiences = [
             • Implementation of custom logic for generating detailed reports, meeting both client and internal business needs.\n
             • Collaboration with multidisciplinary teams to optimize workflows, implement best development practices, and continuously improve code structure.
         `,
-        stack: ['Node.js', 'PHP', 'RabbitMQ', 'MongoDB', 'MySQL', 'Redis', 'Angular.js', 'HTML', 'CSS', 'AWS']
+        stack: ['Node.js (TypeScript/JavaScript)', 'PHP 7', 'RabbitMQ', 'MongoDB', 'MySQL', 'Redis', 'Angular.js', 'HTML', 'CSS', 'AWS (S3, SQS, EC2)', 'Jest', 'Eslint', 'Agile']
     }
 ]
 
